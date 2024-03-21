@@ -1,0 +1,17 @@
+id: a70e1202-14b5-4daa-9ec3-4c926e6e1fe0
+timestamp: 2024-03-21T01:49:36Z
+username: guest
+source: TAP-GUI
+accelerator:
+  name: angular-frontend
+  source:
+    image: harbor.platform.sbx.tanzufederal.com/tap-1.6.1/tap-packages@sha256:a93a90bb34a07ea0e6a88887f8372f848ba121451eeff64fa9b2beba44a4f9b0
+fragments:
+  - name: tap-workload
+    source:
+      image: harbor.platform.sbx.tanzufederal.com/tap-1.6.1/tap-packages@sha256:d9c7d8d322f0740666ba7c752a9174d1eb66274338c4f0e211edb1d448104c2a
+options:
+  artifactId: customer-profiles-frontend
+  backendService: customer-profile-backend.apps
+  projectName: customer-profiles-frontend
+  useSingleSignOn: false
