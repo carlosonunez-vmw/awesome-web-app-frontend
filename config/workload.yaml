@@ -12,7 +12,7 @@ spec:
       value:
         autoscaling.knative.dev/minScale: "1"
     - name: clusterBuilder
-      value: full
+      value: default
   build:
     env:
       - name: BP_NODE_RUN_SCRIPTS
@@ -21,6 +21,6 @@ spec:
         value: "dist"
   source:
     git:
-      url: <https URL for your generated project's Git repository>
+      url: https://github.com/carlosonunez-vmw/awesome-web-app-frontend
       ref:
         branch: main
